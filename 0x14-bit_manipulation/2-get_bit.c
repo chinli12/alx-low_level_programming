@@ -8,7 +8,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if (index >= sizeof(unsigned long int) * 8) /* check if index is valid */
-    	return (-1);
-	return ((n >> index) & 1); /* shift right to get bit at index and use & to mask other bits */
+	if (index >= sizeof(unsigned long int) * 8)
+		return (-1);
+	return ((n >> index) & 1);
 }
